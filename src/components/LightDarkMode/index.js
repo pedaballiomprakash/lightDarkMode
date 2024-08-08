@@ -8,13 +8,13 @@ class LightDarkMode extends Component {
   }
 
   onLight = () => {
-    this.setState(prevState => ({isDarkMode: !prevState.isLightMode}))
+    this.setState(prevState => ({isDarkMode: !prevState.isDarkMode}))
   }
 
   render() {
     const {isDarkMode} = this.state
     const modeClassName = isDarkMode ? 'dark-mode' : 'light-mode'
-    const buttonText = isDarkMode ? 'Dark Mode' : 'Light-mode'
+    const buttonText = isDarkMode ? 'Light Mode' : 'Dark-mode'
 
     return (
       <div className="app-container">
